@@ -53,14 +53,16 @@
 <h1>Homework 8: Surface Water Supply Watersheds within Nuclear Exposure Zones </h1>
 <h2>Research Question: Which surface supply watersheds would potentially be impacted by a nuclear power plant accident?<h2></h2>
 
+<img src="./map8_new_first.png" alt="Surface Water Supply Watersheds with Nuclear Power Plants" width='800px'>
+
  <h3>Background</h3>
 <p>After a nuclear accident, two buffers are created around a nuclear power plant. A 10 mile area surrounding the path can expect to be impacted by the plume, while a buffer of 50 miles circumscribes the edges where harmful radiation is expected and food and water in this area may be listed as contaminated. This map primarily focused on the impact on drinking water supplies.</p>
+
+<img src="./map8.new.png" alt="Surface Water Supply Watersheds Within Nuclear Emergency Zones" width='800px'>
 
 <h3>Creating the Map</h3>
 <p>In order to make this map, I created a shapefile of all nuclear plants in North Carolina or near enough to North Carolina to impact the state, which resulted in 5 points in total. I then added a vector layer of North Carolina surface water watersheds. In order to represent the ingestion exposure pathway, I created a 50 mile buffer around each point. The watersheds that overlapped with the buffer zones were found using the intersect tool. From this map it can be determined that watersheds around central NC would be impacted, while watersheds in the mountains of North Carolina are largely unaffected.</p>
 
-<!-- This line of code adds the GIF to the webpage-->
-<img src="./map 8.png" alt="Surface Water Supply Watersheds within Nuclear Exposure Zones" width='800px'>
 
 <h4>Data Files:</h4>
     <a href="https://github.com/TsehaiR/hw8/blob/main/brunswick_4326.geojson">Brunswick Plant</a><br>
@@ -74,7 +76,7 @@
     <a href="https://github.com/TsehaiR/hw8/blob/main/McGuire_4326.geojson"> McGuire Plant</a><br>
     <a href="https://github.com/TsehaiR/hw8/blob/main/Buffer_mcg_4326.geojson">McGuire Buffer</a><br>
 
-<h5>Created using:</h5>
+<h4>Created using:</h4>
     <a href="https://www.nconemap.gov/datasets/ncdenr::nc-surface-water-supply-watersheds/explore"> NC OneMap </a><br>
     <a href="https://www.nrc.gov/about-nrc/emerg-preparedness/about-emerg-preparedness/planning-zones.html"> U.S.NRC</a><br>
 
